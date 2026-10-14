@@ -217,7 +217,7 @@ export default function Home() {
 
       <section className="education-strip">
         <Reveal>
-          <span>2022 — PRESENT</span>
+          <span>Oct 2022 — Sep 2026</span>
           <h3>BSc Artificial Intelligence</h3>
           <p>University of Central Punjab · Lahore</p>
         </Reveal>
