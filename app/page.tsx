@@ -1,7 +1,9 @@
- "use client";
+"use client";
 
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { useRef } from "react";
+
+const CV_PATH = "/Alman-Ahmad-CV.pdf";
 
 const experiences = [
   ["May 2026 - Oct 2026", "Indigo Tech Solutions", "AI / Accounts Expert", "Zoho Books Integration · QuickBooks Management · Receiveable / Payable Automation"],
@@ -49,14 +51,25 @@ function Reveal({
   );
 }
 
-function MagneticButton({ href, children }: { href: string; children: React.ReactNode }) {
+function MagneticButton({
+  href,
+  children,
+  download,
+  variant = "solid"
+}: {
+  href: string;
+  children: React.ReactNode;
+  download?: string;
+  variant?: "solid" | "outline";
+}) {
   return (
     <motion.a
       href={href}
+      download={download}
       whileHover={{ y: -3, scale: 1.02 }}
       whileTap={{ scale: 0.97 }}
       transition={{ type: "spring", stiffness: 400, damping: 20 }}
-      className="button"
+      className={variant === "outline" ? "button outline" : "button"}
     >
       {children}
     </motion.a>
@@ -115,6 +128,9 @@ export default function Home() {
           <Reveal delay={0.3}>
             <div className="hero-actions">
               <MagneticButton href="#work">Explore my work <span>↓</span></MagneticButton>
+              <MagneticButton href={CV_PATH} download="Alman-Ahmad-CV.pdf" variant="outline">
+                Download CV <span>⭳</span>
+              </MagneticButton>
               <a className="text-link" href="mailto:mughal.mirza129@gmail.com">Let&apos;s talk ↗</a>
             </div>
           </Reveal>
@@ -238,6 +254,10 @@ export default function Home() {
           </p>
           <MagneticButton href="mailto:mughal.mirza129@gmail.com">
             mughal.mirza129@gmail.com ↗
+          </MagneticButton>
+          <div style={{ height: 14 }} />
+          <MagneticButton href={CV_PATH} download="Alman-Ahmad-CV.pdf" variant="outline">
+            Download CV <span>⭳</span>
           </MagneticButton>
 
           <div className="socials">
