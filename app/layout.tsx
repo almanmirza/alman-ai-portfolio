@@ -4,15 +4,16 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Alman Ahmad — AI/ML Engineer",
   description:
-    "Portfolio of Alman Ahmad — AI/ML Engineer focused on Machine Learning, Deep Learning, Computer Vision, NLP and Generative AI.",
+    "Alman Ahmad — AI/ML Engineer | Machine Learning, Computer Vision, NLP, Generative AI & Business Operations",
   keywords: [
     "Alman Ahmad",
     "AI Engineer",
     "Machine Learning",
-    "Deep Learning",
     "Generative AI",
     "Computer Vision",
-    "NLP"
+    "NLP",
+    "Accounts Operations",
+    "Business Operations"
   ],
   openGraph: {
     title: "Alman Ahmad — AI/ML Engineer",
