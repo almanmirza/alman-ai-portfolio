@@ -4,26 +4,27 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { useRef } from "react";
 
 const experiences = [
-  ["2026", "Indigo Tech Solutions", "AI / Accounts Expert", "Zoho Books Integration · QuickBooks Management · Receiveable / Payable Automation"],
-  ["2025", "MCB Bank", "AI / Technology Internship", "Network VOIP Integration · Database Administration · HR Management"],
-  ["2025", "Cartlow", "Agentic AI Engineer Intern", "Agentic AI · Chatbot Development"],
-  ["2025", "COSMIC365.AI", "Data Analyst Intern", "Data Analysis · Data Management"],
-  ["2024", "CodeAlpha", "AI Intern", "Python · Tkinter"]
+  ["May 2026 - Oct 2026", "Indigo Tech Solutions", "AI / Accounts Expert", "Zoho Books Integration · QuickBooks Management · Receiveable / Payable Automation"],
+  ["Sep 2025 - Oct 2025", "MCB Bank", "AI / Technology Internship", "Network VOIP Integration · Database Administration · HR Management"],
+  ["May 2025 - Aug 2025", "Cartlow", "Agentic AI Engineer Intern", "Agentic AI · Chatbot Development"],
+  ["Sep 2024 - Oct 2024", "CodeAlpha", "AI Intern", "Python · Tkinter"]
 ];
 
 const projects = [
-  ["01", "Gesture Control Calculator", "Computer Vision", "YOLOv8-based gesture recognition turned into an interactive calculator experience."],
-  ["02", "Qyra", "Agentic AI / Application", "A full-fledged application involving booking agents, developed during the Cartlow experience."],
-  ["03", "Music Recommendation System", "Machine Learning", "A Python recommendation project focused on turning user/item patterns into useful suggestions."],
-  ["04", "Movie Recommendation System", "Python / DSA", "Recommendation logic combined with data-structure concepts."],
-  ["05", "Climate Change Chatbot", "NLP", "A dataset-driven chatbot exploring conversational responses around climate change."],
-  ["06", "IRIS ML Studio", "ML / Streamlit", "A trained Iris dataset model packaged into an interactive Streamlit interface."]
+  ["01", "StreetFresh", "AI / Computer Vision / Marketplace", "An AI-powered fruit and vegetable marketplace integrating produce recognition, freshness analysis, and vendor-to-customer ordering to make fresh produce shopping smarter and more accessible."],
+  ["02", "M&E Garments — AI-Powered E-Commerce", "AI / Full-Stack Development", "A modern AI-powered garments e-commerce platform featuring an engaging shopping experience, an intelligent admin panel, and customer-focused features designed to streamline store management and improve online shopping."],
+  ["03", "Gesture Control Calculator", "Computer Vision", "An interactive calculator powered by YOLOv8-based hand gesture recognition, enabling users to perform calculations through intuitive hand movements."],
+  ["04", "Qyra", "Agentic AI / Application Development", "A full-fledged AI application developed during my Cartlow experience, incorporating booking agents and agentic workflows to support automated, task-oriented interactions."],
+  ["05", "Music Recommendation System", "Machine Learning", "A Python-based recommendation system that analyzes user and item patterns to generate relevant music suggestions and deliver a more personalized listening experience."],
+  ["06", "Movie Recommendation System", "Python / Data Structures & Algorithms", "A movie recommendation project combining Python programming and data-structure concepts to organize recommendation logic and help users discover relevant films."],
+  ["07", "Climate Change Chatbot", "Natural Language Processing", "A dataset-driven NLP chatbot designed to respond to climate change-related queries and demonstrate how conversational AI can make environmental information more accessible."],
+  ["08", "IRIS ML Studio", "Machine Learning / Streamlit", "An interactive machine learning application that uses a trained Iris classification model to predict flower species and demonstrate model inference through a user-friendly Streamlit interface."]
 ];
 
 const skills = [
   "Machine Learning", "Deep Learning", "Generative AI", "Computer Vision",
   "NLP", "Python", "C++", "TensorFlow", "PyTorch", "Scikit-learn",
-  "TypeScript", "Data Analysis", "Git", "Databases"
+  "TypeScript", "Data Analysis", "Git", "Databases", "Streamlit", "Tkinter", "FastAPI", "Docker", "Zoho Books", "YOLOv8"
 ];
 
 function Reveal({
